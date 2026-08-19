@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 219 46% 11%; /* #0D1B2A */
+    --foreground: 210 40% 98%; /* #F1F5F9 */
+    
+    --card: 218 42% 17%; /* #1A2840 */
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 219 46% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 20 100% 58%; /* #FF6B2B - Orange */
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 217 60% 26%; /* #1B3A6B - Royal Blue */
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --accent: 38 92% 55%; /* #F5A623 - Gold */
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 84.2% 60.2%; /* #EF4444 */
+    --destructive-foreground: 210 40% 98%;
+    
+    --success: 142 71% 45%; /* #22C55E */
+    --warning: 38 92% 50%; /* #F59E0B */
+    
+    --border: 217 32% 25%;
+    --input: 217 32% 17%;
+    --ring: 20 100% 58%;
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-[#1A2840]/80 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+  
+  .glass-panel {
+    @apply bg-[#0D1B2A]/90 backdrop-blur-xl border-r border-white/10 shadow-2xl;
+  }
+
+  .gradient-primary {
+    @apply bg-gradient-to-r from-[#0A1628] to-[#1B3A6B];
+  }
+  
+  .gradient-accent {
+    @apply bg-gradient-to-r from-[#FF6B2B] to-[#F5A623];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF6B2B] to-[#F5A623];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Map Container */
+.map-container {
+  @apply w-full h-full rounded-lg overflow-hidden border border-white/10 relative;
+}
