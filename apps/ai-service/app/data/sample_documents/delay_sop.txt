@@ -1,0 +1,42 @@
+STANDARD OPERATING PROCEDURE (SOP): TRAIN DELAY MANAGEMENT AND RECOVERY
+Document Ref: RAIL/OPS/SOP/2026/04
+
+1. PURPOSE AND SCOPE
+This SOP outlines the protocol for handling, communicating, and mitigating train delays across all Indian Railways zones, with specific focus on high-density networks in Northern Railway (NR), North Central Railway (NCR), and East Central Railway (ECR). The objective is to ensure minimal cascading effects on the network timetable.
+
+2. CLASSIFICATION OF DELAYS
+- Minor Delay: 15 to 30 minutes. Handled at the Station Master (SM) level.
+- Moderate Delay: 30 to 60 minutes. Handled by Section Controller.
+- Severe Delay: Over 60 minutes. Requires intervention by Chief Controller (CHC) and Senior Divisional Operations Manager (Sr. DOM).
+- Catastrophic Delay: Over 180 minutes or line blockage. Escalated to Divisional Railway Manager (DRM) and Zonal General Manager (GM).
+
+3. IMMEDIATE ACTION PLAN (First 15 Minutes)
+3.1 Identification of Cause
+The Station Master or Traffic Inspector (TI) must ascertain the root cause of the delay from the Loco Pilot or Guard via VHF communication. Causes may include:
+- Signal failure (S&T department)
+- Loco failure (Mechanical/Electrical department)
+- Overhead Equipment (OHE) tripping (Traction department)
+- Law and Order/Chain Pulling (RPF/GRP)
+
+3.2 Initial Communication
+The SM must update the Control Office immediately. If the delay occurs at a major terminal like CSMT, MAS, or SBC, the platform must be dynamically reassigned to incoming trains to prevent congestion at the outer signals.
+
+4. ESCALATION MATRIX AND RECOVERY
+4.1 Role of Section Controller
+The Section Controller will monitor the progress of the delayed train and attempt to recover time by granting precedence over lower priority trains (e.g., holding a freight train in the loop line to pass a delayed Rajdhani or Shatabdi).
+
+4.2 Role of Chief Passenger Transportation Manager (CPTM)
+If a premium train is delayed by more than 120 minutes, the CPTM at the Zonal HQ must be informed. The CPTM may authorize the bypassing of certain commercial halts or route diversions if alternative lines are available (e.g., routing via an alternate chord line).
+
+5. PASSENGER COMMUNICATION PROTOCOL
+5.1 NTES Updates
+The National Train Enquiry System (NTES) must be updated in real-time. The delay in NTES update should not exceed 5 minutes from the actual occurrence.
+5.2 SMS Alerts
+CRIS will automatically trigger SMS alerts to all reserved passengers for delays exceeding 60 minutes, with subsequent updates every 30 minutes.
+5.3 Station Announcements
+At halting stations, the SM must ensure continuous announcements detailing the expected time of arrival (ETA) and the reason for the delay.
+
+6. POST-DELAY INVESTIGATION
+For any delay exceeding 60 minutes, a joint investigation report must be filed by the TI, Loco Inspector (LI), and the respective departmental supervisor. The report must be submitted to the Sr. DOM within 24 hours. The historical replay dataset will be used to reconstruct the event for analysis.
+
+[End of Document - Extended content would continue here for real SOP]

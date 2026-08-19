@@ -1,0 +1,32 @@
+STATION OPERATIONS AND COMMERCIAL MANUAL
+Applicable to all A1 and A category stations (e.g., NDLS, HWH, CSMT, BCT, SBC, MAS)
+
+1. PLATFORM MANAGEMENT AND TRAIN RECEPTION
+1.1 Platform Nomination
+Trains should be received on their nominated platforms as per the Working Time Table (WTT). Changes should only be made in emergencies.
+1.2 Route Setting
+The SM or Panel Operator must set the route and clear the Home Signal only after ensuring the nominated line is clear of all obstructions up to the Starter Signal.
+1.3 Platform Clearance
+Platforms must be cleared of parcel trolleys and mechanized cleaning equipment at least 15 minutes prior to the arrival of a mail/express train.
+
+2. CROWD MANAGEMENT AND SECURITY
+2.1 Density Monitoring
+The Railway Protection Force (RPF) is responsible for crowd control. If platform density at major hubs like NDLS or HWH exceeds 2.5 persons per square meter, the RPF Inspector must initiate the "One-Way Movement Protocol".
+2.2 CCTV Surveillance
+The RPF Control Room must monitor all 4K CCTV feeds continuously. Any unattended baggage must be reported to the Bomb Detection and Disposal Squad (BDDS) within 3 minutes of spotting.
+2.3 Foot Over Bridge (FOB) Control
+To prevent stampedes, RPF personnel must be deployed at FOB staircases to regulate the flow of passengers during peak hours.
+
+3. COMMERCIAL DUTIES
+3.1 Ticket Checking
+The Chief Ticket Inspector (CTI) will deploy squads for intensive ticket checking drives at exit gates. Mobile squads will conduct checks onboard trains originating from the station.
+3.2 Catering and Vending
+The Station Director or Station Manager (Commercial) must conduct weekly hygiene inspections of all IRCTC food stalls and base kitchens. Expired products will result in immediate penalty and potential license cancellation.
+3.3 Passenger Amenities
+"May I Help You" booths must be staffed 24/7. Staff must have access to the NTES dashboard and the ITrainDataProvider demo implementation for accurate train running information.
+
+4. DISASTER MANAGEMENT AT STATION
+4.1 Medical Emergencies
+A fully equipped emergency medical room (EMR) with a doctor on duty must be available. For onboard medical emergencies, the SM must arrange for a stretcher and medical staff upon the train's arrival.
+4.2 Fire Protocols
+In case of fire at the station premises, the SM will act as the Incident Commander until the arrival of the Fire Brigade. All power to the affected section must be isolated immediately.

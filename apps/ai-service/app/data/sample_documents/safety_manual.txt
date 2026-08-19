@@ -1,0 +1,55 @@
+INDIAN RAILWAYS SAFETY MANUAL
+[Volume I - Operations and Signaling]
+
+CHAPTER 1: SIGNAL ASPECTS AND INDICATIONS
+
+1.1 General Provisions
+Signals are the primary means of communication between the station master (SM), assistant station master (ASM), and the loco pilot. The absolute adherence to signal aspects is the cornerstone of railway safety across all zones including Central Railway (CR), Northern Railway (NR), and Southern Railway (SR). No signal shall be passed at danger (SPAD) without written authority under any circumstances.
+
+1.2 Absolute Block System
+Under the Absolute Block System, only one train is permitted in a block section at a time. The entry into a block section is controlled by the Last Stop Signal (LSS), usually the Advanced Starter. Before clearing the LSS, the SM must obtain "Line Clear" from the SM of the advance station using block instruments. This system is heavily utilized in single-line sections of the North Eastern Railway (NER) and South Central Railway (SCR).
+
+1.3 Automatic Block System
+In high-density routes such as those in Western Railway (WR) (e.g., Churchgate to Virar) and Central Railway (CR) (e.g., CSMT to Kalyan), the Automatic Block System is employed. 
+(a) The section is divided into automatic signaling blocks.
+(b) The entry to each block is controlled by an Automatic Signal that changes aspects based on track circuits.
+(c) The aspects and their meanings:
+    - Red (Danger): Stop dead. After waiting for 1 minute by day or 2 minutes by night, the loco pilot may proceed cautiously at a speed not exceeding 15 kmph, prepared to stop short of any obstruction.
+    - Yellow (Caution): Proceed at restricted speed and be prepared to stop at the next signal.
+    - Double Yellow (Attention): Proceed at an appropriate speed, passing the next signal at restricted speed.
+    - Green (Clear): Proceed at the maximum permissible speed for the section.
+
+CHAPTER 2: DUTIES OF LOCO PILOT AND GUARD
+
+2.1 Loco Pilot Duties
+Before starting from originating stations like NDLS (New Delhi) or HWH (Howrah), the loco pilot must:
+(a) Check the locomotive logbook and ensure all brake tests (continuity test) are completed.
+(b) Receive the Caution Order (T/409) from the SM.
+(c) Ensure the walkie-talkie is functional and tuned to the correct frequency for communication with the guard and station staff.
+
+2.2 Guard Duties
+The guard is in charge of the train. The guard must:
+(a) Ensure the formation is complete and the Last Vehicle Board (LV) or Tail Lamp is intact.
+(b) Maintain the rough journal and note the passing times at all block stations.
+(c) Apply the handbrake in the brake van if the train stalls on a gradient.
+
+CHAPTER 3: TRACK MAINTENANCE AND PATROLLING
+
+3.1 Routine Maintenance
+Track geometry must be checked weekly by the Permanent Way Inspector (PWI). Any deviation exceeding 5mm in gauge or cross-level must be rectified within 48 hours. The PWI reports directly to the Assistant Divisional Engineer (ADEN).
+
+3.2 Monsoon Patrolling
+During the monsoon season (June to September), night patrolling is mandatory in vulnerable sections of Konkan Railway (KR) and Northeast Frontier Railway (NFR). Patrolmen must be equipped with:
+- 10 detonators (fog signals)
+- Tricolor hand signal lamp
+- GPS tracker for real-time monitoring by the control office.
+
+CHAPTER 4: LEVEL CROSSING PROCEDURES
+
+4.1 Manned Level Crossings
+The gateman must close the gates against road traffic 10 minutes before the scheduled arrival of any train. The signals protecting the crossing (Gate Signals) cannot be cleared until the gates are locked and the boom drops. 
+
+4.2 Action During Emergencies
+If a road vehicle breaks down on the level crossing, the gateman must immediately place detonators on the track (1 at 600m, 3 at 1200m) to warn approaching trains and display a red hand signal towards the expected direction of the train.
+
+[End of Document - Extended content would continue here for real manual]

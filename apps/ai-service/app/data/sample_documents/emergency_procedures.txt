@@ -1,0 +1,34 @@
+RAILWAY DISASTER MANAGEMENT AND EMERGENCY PROCEDURES
+
+1. GENERAL PRINCIPLES
+The primary objective during any railway disaster is the preservation of life, followed by the protection of property and the rapid restoration of traffic. The Divisional Railway Manager (DRM) acts as the Chief Incident Commander for the division.
+
+2. TRAIN ACCIDENT OR DERAILMENT
+2.1 Immediate Protection of Lines
+The Loco Pilot and Guard of the derailed train must immediately protect adjacent lines to prevent secondary collisions.
+- By Day: Display a red flag.
+- By Night: Display a red flashing hand signal lamp.
+- Place detonators on the adjacent track: 1 at 600 meters, 3 at 1200 meters (10 meters apart) from the site of the obstruction in both directions.
+
+2.2 Information Dissemination
+The Guard must inform the Section Controller via VHF or the emergency portable telephone socket located on OHE masts. Information required: exact kilometerage, number of coaches derailed, adjacent line status, and initial estimate of casualties.
+
+2.3 Relief Train Ordering
+The Chief Controller will immediately order the Accident Relief Medical Equipment (ARME) van and the Accident Relief Train (ART). The ARME must be dispatched within 15 minutes by day and 20 minutes by night from its base station.
+
+3. FIRE IN TRAIN
+3.1 Stoppage
+The Loco Pilot must stop the train immediately. However, if the train is on a bridge or inside a tunnel, the train should be driven out to a safe location before stopping, if possible.
+3.2 Isolation
+The Guard, Assistant Loco Pilot (ALP), and TTEs must evacuate passengers from the affected coach. The affected coach must be isolated (uncoupled) from the rest of the train to prevent the fire from spreading.
+3.3 Traction Power
+In electrified territories (e.g., Eastern Railway, South East Central Railway), the Loco Pilot must lower the pantograph and request the Traction Power Controller (TPC) to switch off the OHE supply.
+
+4. SEVERE WEATHER AND FLOODING
+4.1 Cyclone Warnings
+Upon receiving a cyclone warning from the IMD, the Zonal GM will activate the disaster management control room. Trains in vulnerable coastal zones (e.g., East Coast Railway - ECoR, Southern Railway - SR) will be regulated or cancelled.
+4.2 Track Washout
+If a Loco Pilot observes water flowing over the track, the train must be stopped dead. The Loco Pilot must not proceed until a Permanent Way Inspector (PWI) inspects the track and provides written certification that the track is safe for passage.
+
+5. COMMUNICATION FAILURE
+In the event of a total failure of communication between stations (e.g., failure of block instruments, VHF, and control phones), trains will be worked on the "Paper Line Clear Ticket" system. The SM will send a physical messenger or use an engine to obtain line clear from the advance station.

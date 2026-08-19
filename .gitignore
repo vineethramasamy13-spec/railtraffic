@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+tsconfig.tsbuildinfo
+
+# Next.js
+.next/
+out/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# NestJS / TypeScript build output
+dist/
+build/
+*.tsbuildinfo
+
+# Database / SQLite / Prisma
+*.db
+*.sqlite
+/prisma/dev.db
+/prisma/dev.db-journal
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.chroma/
+chroma_data/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# Project specific envs
+.env
+apps/api/.env
+apps/ai-service/.env
+apps/web/.env.local

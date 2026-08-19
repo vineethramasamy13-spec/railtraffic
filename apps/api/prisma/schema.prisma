@@ -1,0 +1,220 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  name         String
+  role         Role       @default(VIEWER)
+  passwordHash String
+  stationId    String?
+  zoneId       String?
+  isActive     Boolean    @default(true)
+  lastLogin    DateTime?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  station      Station?   @relation(fields: [stationId], references: [id])
+  AuditLog     AuditLog[]
+}
+
+enum Role {
+  ADMIN
+  STATION_MASTER
+  ZONE_MANAGER
+  OPERATOR
+  VIEWER
+}
+
+model Train {
+  id                 String     @id @default(uuid())
+  trainNumber        String     @unique
+  trainName          String
+  category           String
+  status             TrainStatus @default(ON_TIME)
+  origin             String
+  destination        String
+  originCode         String
+  destinationCode    String
+  scheduledDeparture DateTime
+  scheduledArrival   DateTime
+  actualDeparture    DateTime?
+  estimatedArrival   DateTime?
+  delayMinutes       Int        @default(0)
+  currentStation     String?
+  nextStation        String?
+  platformNumber     String?
+  rake               String?
+  zone               String?
+  division           String?
+  occupancy          Int?
+  capacity           Int?
+  updatedAt          DateTime   @updatedAt
+  alerts             Alert[]
+  currentPlatform    Platform?  @relation("CurrentTrain")
+  nextPlatform       Platform?  @relation("NextTrain")
+}
+
+enum TrainStatus {
+  ON_TIME
+  DELAYED
+  CANCELLED
+  DIVERTED
+  ARRIVED
+  DEPARTED
+}
+
+model Station {
+  id             String     @id @default(uuid())
+  code           String     @unique
+  name           String
+  nameHindi      String?
+  latitude       Float
+  longitude      Float
+  zone           String
+  division       String
+  category       String?
+  state          String
+  city           String
+  isJunction     Boolean    @default(false)
+  hasWifi        Boolean    @default(false)
+  totalPlatforms Int        @default(1)
+  platforms      Platform[]
+  users          User[]
+  alerts         Alert[]
+}
+
+model Platform {
+  id             String   @id @default(uuid())
+  stationId      String
+  number         String
+  length         Int?
+  type           String?
+  status         PlatformStatus @default(AVAILABLE)
+  currentTrainId String?  @unique
+  nextTrainId    String?  @unique
+  station        Station  @relation(fields: [stationId], references: [id])
+  currentTrain   Train?   @relation("CurrentTrain", fields: [currentTrainId], references: [id])
+  nextTrain      Train?   @relation("NextTrain", fields: [nextTrainId], references: [id])
+}
+
+enum PlatformStatus {
+  AVAILABLE
+  OCCUPIED
+  MAINTENANCE
+  CLOSED
+}
+
+model Alert {
+  id                String        @id @default(uuid())
+  title             String
+  description       String
+  severity          AlertSeverity @default(INFO)
+  category          AlertCategory @default(GENERAL)
+  status            AlertStatus   @default(ACTIVE)
+  stationId         String?
+  trainId           String?
+  trainNumber       String?
+  stationCode       String?
+  aiRootCause       String?
+  recommendedAction String?
+  acknowledgedBy    String?
+  acknowledgedAt    DateTime?
+  resolvedBy        String?
+  resolvedAt        DateTime?
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  station           Station?      @relation(fields: [stationId], references: [id])
+  train             Train?        @relation(fields: [trainId], references: [id])
+}
+
+enum AlertSeverity {
+  INFO
+  WARNING
+  CRITICAL
+  FATAL
+}
+
+enum AlertCategory {
+  DELAY
+  MAINTENANCE
+  SECURITY
+  WEATHER
+  GENERAL
+  CROWD
+}
+
+enum AlertStatus {
+  ACTIVE
+  ACKNOWLEDGED
+  RESOLVED
+  DISMISSED
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  userId     String
+  userEmail  String
+  action     String
+  resource   String
+  resourceId String?
+  changes    Json?
+  ipAddress  String?
+  userAgent  String?
+  success    Boolean  @default(true)
+  timestamp  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id])
+}
+
+model Report {
+  id          String   @id @default(uuid())
+  title       String
+  type        String
+  status      String   @default("PENDING")
+  format      String   @default("PDF")
+  aiSummary   String?
+  fileUrl     String?
+  parameters  Json?
+  generatedBy String
+  generatedAt DateTime?
+  createdAt   DateTime @default(now())
+}
+
+model MaintenanceAsset {
+  id              String    @id @default(cuid())
+  assetType       AssetType
+  assetCode       String    @unique
+  name            String
+  location        String
+  zone            String
+  age             Int
+  lastMaintenance DateTime
+  usageCount      BigInt
+  healthScore     Float
+  riskScore       Float
+  riskLevel       RiskLevel
+  nextMaintenance DateTime?
+  notes           String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+enum AssetType {
+  TRACK
+  SIGNAL
+  SWITCH
+  BRIDGE
+  LEVEL_CROSSING
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
